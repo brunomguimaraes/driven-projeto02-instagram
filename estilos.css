@@ -142,8 +142,7 @@ strong {
 
 .postagem {
     border: 1px solid #dbdbdb;
-    margin-bottom: 50px;
-    
+    margin-bottom: 50px;    
 }
 
 .topo-postagem {
@@ -152,8 +151,7 @@ strong {
     font-weight: bold; 
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 .topo-postagem img {
@@ -210,6 +208,7 @@ strong {
     width: 293px;
     height: 400px;
     margin-left: 28px;
+    float: left;
 }
 .usuario {
     margin-top: 24px;
@@ -251,6 +250,10 @@ strong {
     align-items: center;
 }
 
+.barra-inferior {
+    display: none;
+}
+
 /* FONTES */
 
 .fonte-usuario {
@@ -281,9 +284,15 @@ strong {
     margin-right: 0;
 }
 
+/* MEDIA QUERIES */
+
 @media (max-width: 935px) {
     .topo {
         width: 100%;
+    }
+
+    .logo {
+        /*margin-left: 22px;*/
     }
 
     .sidebar {
@@ -303,19 +312,39 @@ strong {
     }
 
     .icones {
-        margin-right: 20px; 
+        margin-right: 22px; 
+    }
+
+    .barra-inferior {
+        display: none;
     }
 }
 
 @media (max-width: 614px){
 
-    .pesquisa {
-        display: none;
+    .topo {
+        width: 100%;
+    }
+
+    .logo {
+        width: 65%;
+    }
+
+    .imagem-logo {
+        margin-left: 45%;
+    }  
+    
+    .icone-logo {
+        margin: 0;
     }
 
     .separador-logo {
         display: none;
     }
+
+    .pesquisa {
+        display: none;
+    }    
 
     .pessoa {
         display: none;
@@ -327,20 +356,19 @@ strong {
 
     .bussola {
         display: none;
-    }
-
-    /*.logo {
-        width: 58vw;
-        justify-content: space-between;
-    }*/
-
-    .seta{
-        display: none;
+    }  
+    
+    .conteudo {
+        margin-top: 54px;
     }
 
     .principal {
         width: 100%;
-    }    
+    } 
+
+    .seta{
+        display: none;
+    }
 
     .stories {
         width: 100%;
@@ -351,23 +379,6 @@ strong {
 
     .postagens {
         width: 100%;
-    }
-
-    .topo {
-        width: 100%;
-        /*position: relative;*/
-    }
-
-    .imagem-logo {
-        /*position: absolute;*/
-        left: 50%;
-        top: 50%;
-        bottom: 50%;
-        right: 50%;
-    }
-
-    .conteudo {
-        margin-top: 54px;
     }
 
     .barra-inferior {
@@ -381,5 +392,4 @@ strong {
         justify-content: space-around;
         align-items: center;
     }
-
-}
+} 
