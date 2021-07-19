@@ -102,6 +102,7 @@ strong {
     display: flex;    
     align-items: center;
     overflow: hidden;
+    position: relative;
 }
 
 .story {   
@@ -129,9 +130,11 @@ strong {
 }
 
 .seta {
-    position: sticky;
+    position: absolute;
     right: 1%;  
-    color: #FFFFFF;         
+    color: #FFFFFF;    
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 70%;
 }
 
 .seta:hover {
@@ -308,10 +311,7 @@ strong {
 
     .conteudo {
         width: 100%;
-    }
-
-    .principal {
-        margin: 0 auto;      
+        justify-content: center;
     }
 
     .icone-logo {
@@ -329,7 +329,7 @@ strong {
 
 @media (max-width: 614px){
 
-    .topo {
+    .topo, .principal, .postagens {
         width: 100%;
     }
 
@@ -343,38 +343,15 @@ strong {
     
     .icone-logo {
         margin: 0;
-    }
-
-    .separador-logo {
-        display: none;
-    }
-
-    .pesquisa {
-        display: none;
-    }    
-
-    .pessoa {
-        display: none;
-    }
-
-    .coracao {
-        display: none;
-    }
-
-    .bussola {
-        display: none;
     }  
+
+    .separador-logo, .pesquisa, .pessoa, .coracao, .bussola, .seta {
+        display: none;
+    }
+
     
     .conteudo {
         margin-top: 54px;
-    }
-
-    .principal {
-        width: 100%;
-    } 
-
-    .seta{
-        display: none;
     }
 
     .stories {
@@ -382,10 +359,6 @@ strong {
         border: 0;
         border-radius: 0;
         background-color: #FAFAFA;
-    }
-
-    .postagens {
-        width: 100%;
     }
 
     .barra-inferior {
