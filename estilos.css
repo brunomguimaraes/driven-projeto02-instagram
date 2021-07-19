@@ -18,6 +18,10 @@ strong {
     font-weight: bold;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .topo {
     background-color: #ffffff;
     height: 54px;  
@@ -28,6 +32,7 @@ strong {
     top: 0;
     left: 0;
     z-index: 1;
+    border-bottom: 1px solid #dbdbdb;
 }
 
 .menu-superior {
@@ -142,7 +147,7 @@ strong {
 
 .postagem {
     border: 1px solid #dbdbdb;
-    margin-bottom: 50px;    
+    margin-bottom: 60px;    
 }
 
 .topo-postagem {
@@ -208,7 +213,9 @@ strong {
     width: 293px;
     height: 400px;
     margin-left: 28px;
-    float: left;
+    position: fixed;
+    top: 88px;
+    right: calc((100vw - 935px) / 2);
 }
 .usuario {
     margin-top: 24px;
